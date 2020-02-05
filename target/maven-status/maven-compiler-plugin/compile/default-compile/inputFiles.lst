@@ -1,7 +1,4 @@
-/home/alexis/eclipse-workspace/grpcDemo/src/main/java/user/UserService.java
-/home/alexis/eclipse-workspace/grpcDemo/src/main/java/com/yrrhelp/grpc/Greeting.java
-/home/alexis/eclipse-workspace/grpcDemo/src/main/java/com/utn/grpc/GreetingServiceGrpc.java
-/home/alexis/eclipse-workspace/grpcDemo/src/main/java/com/yrrhelp/grpc/userGrpc.java
-/home/alexis/eclipse-workspace/grpcDemo/src/main/java/com/utn/grpc/GreetingOuterClass.java
-/home/alexis/eclipse-workspace/grpcDemo/src/main/java/GRPCServer.java
-/home/alexis/eclipse-workspace/grpcDemo/src/main/java/javax/annotation/Generated.java
+/home/alexis/eclipse-workspace/GRPC-Java/src/main/java/GRPCServer.java
+/home/alexis/eclipse-workspace/GRPC-Java/src/main/java/user/GreetingService.java
+/home/alexis/eclipse-workspace/GRPC-Java/src/main/java/com/utn/grpc/GreetingOuterClass.java
+/home/alexis/eclipse-workspace/GRPC-Java/src/main/java/com/utn/grpc/GreetingServiceGrpc.java

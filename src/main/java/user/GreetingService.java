@@ -1,6 +1,8 @@
 package user;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import com.utn.grpc.GreetingOuterClass.Empty;
 import com.utn.grpc.GreetingOuterClass.Greeting;
@@ -13,14 +15,15 @@ public class GreetingService extends GreetingServiceImplBase {
 
 	@Override
 	public void hello(Person request, StreamObserver<Greeting> responseObserver) {
-		System.out.println("LLEGO ACA CHE");
 		String name = request.getName();
 		String timeStart = request.getTimeStart();
-		System.out.println(name + timeStart);
 		Greeting.Builder response = Greeting.newBuilder();
-		response.setMessage("Hola querido " + name).setTimeStart(new SimpleDateFormat("HH:mm:ss dd/MM/yyyy").toString());
+		Date date = new Date();
+		DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+		response.setMessage("Hola querido " + name).setTimeStart(dateFormat.format(date));
 		
-		
+		responseObserver.onNext(response.build());
+		responseObserver.onCompleted();
 	}
 
 	@Override
